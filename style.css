@@ -1,0 +1,18 @@
+h1{
+  color: aqua;
+}
+p{
+  color: rgb(77, 9, 99);
+}
+h3{
+  color: brown;
+}
+h4{
+  color: burlywood;
+  padding: auto;
+  mask-border-slice: initial;
+  background-color: rgb(125, 10, 0);
+  border-radius: 10px;
+  height: auto;
+  width: auto;
+}
