@@ -1,18 +1,118 @@
-h1{
-  color: aqua;
+/* Import a modern font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;800&display=swap');
+
+/* --- RESET & BASE --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-p{
-  color: rgb(77, 9, 99);
+
+body {
+  font-family: 'Outfit', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  
+  /* Modern Dark Animated Background */
+  background: radial-gradient(circle at top left, #1a0b2e, #000000, #0f172a);
+  background-size: 200% 200%;
+  animation: bgShift 15s ease infinite;
+  color: #e2e8f0;
+  text-align: center;
 }
-h3{
-  color: brown;
+
+/* --- TYPOGRAPHY STYLES --- */
+
+/* The Main Title (Hello) */
+h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  margin-bottom: 0.5rem;
+  
+  /* Neon Gradient Text */
+  background: linear-gradient(135deg, #00f3ff 0%, #bc13fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  /* Glow Effect */
+  filter: drop-shadow(0 0 20px rgba(188, 19, 254, 0.5));
+  animation: float 6s ease-in-out infinite;
 }
-h4{
-  color: burlywood;
-  padding: auto;
-  mask-border-slice: initial;
-  background-color: rgb(125, 10, 0);
-  border-radius: 10px;
-  height: auto;
-  width: auto;
+
+/* The Paragraph */
+p {
+  font-size: 1.2rem;
+  color: #94a3b8;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1rem;
+  display: inline-block;
+}
+
+/* Level 2 Headers (The "Edited" & "Lorem" text) */
+h2 {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  max-width: 700px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+h2:hover {
+  transform: translateY(-5px);
+  border-color: #00f3ff;
+}
+
+/* Level 3 Headers (Questions/Rank) */
+h3 {
+  color: #00f3ff;
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  text-shadow: 0 0 10px rgba(0, 243, 255, 0.3);
+}
+
+/* Level 4 Headers (Status Updates) */
+h4 {
+  font-family: 'Courier New', monospace;
+  color: #ffd700; /* Gold */
+  background: rgba(255, 215, 0, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+/* --- ANIMATIONS --- */
+
+@keyframes bgShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 600px) {
+  h1 { font-size: 3.5rem; }
+  h2 { font-size: 1rem; padding: 1rem; }
 }
