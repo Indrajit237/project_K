@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <h1>Hello </h1>
-  <p> This is the LOCAL change </p>
-  <p> This is the GITHUB change </p>
-  <h4>now 1st time edited </h4>
-  <h2>
-    2nd time edited 
-  </h2>
-  <h1>THis is going to me fun</h1>
-  <h3>
-    did you eat medicine ?
-  </h3>
-  <h4>my net is gone </h4>
-  <h3>Again net come</h3>
-  <br>
-  <h2>Lorem ipsum dolor sit amet consectetur a dipisicing elit. Architecto itaque optio ipsam porro maiores soluta dolorem in facere nesciunt voluptatem.</h2>
-  <h3> now this is 1st rank in all india AIR </h3>
-  <p> This is testing merging on conflict </p>
+
+    <div class="container">
+        <header>
+            <h1>TaskMaster</h1>
+            <p>Manage your day effectively.</p>
+        </header>
+
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="What needs to be done?">
+            <button id="addBtn"><i class="fas fa-plus"></i> Add</button>
+        </div>
+
+        <div class="list-container">
+            <ul id="taskList">
+                </ul>
+        </div>
+        
+        <div class="footer-controls">
+            <span id="pendingCount">You have 0 pending tasks</span>
+            <button id="clearBtn">Clear All</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
