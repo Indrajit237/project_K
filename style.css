@@ -1,11 +1,11 @@
 /* CSS Variables for easy theming */
 :root {
-    --primary-color: #6c5ce7;
+    --primary-color: #d1b25d;
     --secondary-color: #a29bfe;
-    --bg-color: #dfe6e9;
+    --bg-color: #188dbf;
     --text-color: #2d3436;
     --white: #ffffff;
-    --danger: #ff7675;
+    --danger: #c51325;
 }
 
 * {
@@ -53,7 +53,7 @@ input[type="text"] {
     width: 100%;
     padding: 12px;
     border: 2px solid #b2bec3;
-    border-radius: 5px;
+    border-radius: 20px;
     outline: none;
     transition: 0.3s;
 }
@@ -121,10 +121,10 @@ li.completed {
 }
 
 #clearBtn {
-    background: var(--danger);
-    color: white;
+    background: rgb(30, 13, 1);
+    color: rgb(255, 255, 255);
     border: none;
     padding: 5px 10px;
-    border-radius: 3px;
+    border-radius: 1000px;
     cursor: pointer;
 }
